@@ -17,7 +17,7 @@ export default function RegisterAndLoginForm() {
   }
   return (
     <div className="bg-purple-50 min-h-screen flex">
-      <div className="w-1/2 flex items-center justify-center">
+      <div className="w-full flex items-center justify-center">
         <div className="bg-white shadow-md rounded-md p-6">
           <form className="mx-auto" onSubmit={handleSubmit}>
             <div className="flex justify-center items-center my-5">
@@ -67,7 +67,7 @@ export default function RegisterAndLoginForm() {
           </form>
         </div>
       </div>
-      <div className="w-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${myImage})` }}></div>
+      
       
     </div>
   );
