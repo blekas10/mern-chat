@@ -16,36 +16,36 @@ export default function RegisterAndLoginForm() {
     setId(data.id);
   }
   return (
-    <div className="bg-purple-50 min-h-screen flex">
+    <div className="bg-green-50 min-h-screen flex">
       <div className="w-full flex items-center justify-center">
         <div className="bg-white shadow-md rounded-md p-6">
           <form className="mx-auto" onSubmit={handleSubmit}>
             <div className="flex justify-center items-center my-5">
-              <h1 className="text-2xl text-purple-600">notMernChat</h1>
+              <h1 className="text-2xl text-green-600">notMernChat</h1>
             </div>
             <input
               value={username}
               onChange={(ev) => setUsername(ev.target.value)}
               type="text"
-              placeholder="username"
-              className="block w-full rounded-md p-2 mb-2 border border-purple-300"
+              placeholder="Prisijungimo vardas"
+              className="block w-full rounded-md p-2 mb-2 border border-green-300"
             />
             <input
               value={password}
               onChange={(ev) => setPassword(ev.target.value)}
               type="password"
-              placeholder="password"
-              className="block w-full rounded-md p-2 mb-2 border border-purple-300"
+              placeholder="Slaptaodis"
+              className="block w-full rounded-md p-2 mb-2 border border-green-300"
             />
-            <button className="bg-purple-500 text-white block w-full rounded-md p-2">
-              {isLoginOrRegister === "register" ? "Register" : "Login"}
+            <button className="bg-green-500 text-white block w-full rounded-md p-2">
+              {isLoginOrRegister === "register" ? "Registruotis" : "Prisijungti"}
             </button>
-            <div className="text-center mt-2 text-purple-600">
+            <div className="text-center mt-2 text-green-600">
               {isLoginOrRegister === "register" && (
                 <div>
                   Jau turite paskyra?
                   <button
-                    className="ml-1 text-purple-500"
+                    className="ml-1 text-green-500"
                     onClick={() => setIsLoginOrRegister("login")}
                   >
                     Prisijunk
@@ -56,7 +56,7 @@ export default function RegisterAndLoginForm() {
                 <div>
                   Neturi paskyros?
                   <button
-                    className="ml-1 text-purple-500"
+                    className="ml-1 text-green-500"
                     onClick={() => setIsLoginOrRegister("register")}
                   >
                     Susikurkite
